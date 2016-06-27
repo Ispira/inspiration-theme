@@ -1,0 +1,22 @@
+{
+    "name": "theme-inspiration",
+    "displayName": "Inspiration-Theme",
+    "description": "Simple, smooth, doesn't burn your retinas.",
+    "version": "1.0.0",
+    "publisher": "Ispira",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Inspiration",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Inspiration.tmTheme"
+            }
+        ]
+    }
+}
