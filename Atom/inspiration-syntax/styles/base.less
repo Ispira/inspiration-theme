@@ -52,25 +52,29 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   background-color: #4C5466;
 }
 
-.comment {
+.comment, .punctuation.definition.comment, .string.comment {
   font-weight: bold;
   color: #2DA8B3;
 }
 
-.string {
+.string, .punctuation.definition.string, .string .punctuation.section.embedded .source {
   color: #2DA8B3;
 }
 
-.constant.numeric {
-  color: #A885FF;
+.string .source {
+    color: #efefef;
 }
 
-.constant.language {
-  color: #A885FF;
+.string.regexp, .source.regexp, .string.variable, .string.regexp.character-class, .string.regexp .constant.character.escape, .string.regexp .source.ruby.embedded, .string.regexp .string.regexp.arbitrary-repitition {
+    color: #A885FF;
 }
 
-.constant.character, .constant.other {
-  color: #A885FF;
+.string.regexp .constant.character.escape {
+    color: #FA70FF;
+}
+
+.constant, .constant.numeric, .constant.language, .constant.character, .constant.other, .entity.name.constant, .variable.other.constant, .variable.language, .support.constant, .support.variable {
+    color: #A885FF;
 }
 
 .variable {
